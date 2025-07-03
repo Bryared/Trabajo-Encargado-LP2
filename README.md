@@ -1,6 +1,23 @@
 # Trabajo-Encargado-LP2
 Repositorio del Trabajo Encargado LP2 con Chalán
 
+# Título del Proyecto
+
+## 🎯 Objetivo
+Este proyecto busca analizar ...
+
+## 🛠️ APIs Utilizadas
+* API1
+* API2
+
+## 🚀 Instrucciones de Uso
+1.  Clonar el repositorio.
+2.  Instalar las dependencias: `pip install -r requirements.txt`
+3.  Ejecutar el script principal: `python main.py`
+
+## 📊 Visualizaciones
+*Aquí se insertarán los gráficos y tablas finales.*
+
 # Integrantes
 | Integrante | Código |
 |---|---|
