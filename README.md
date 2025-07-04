@@ -90,7 +90,7 @@ Este proyecto busca analizar ...
 | Alva Aquino Nicole | 20221388 |
 | Ruiz Macedo Fernando Jose | 20211830 |
 | Ramos Correa, Freddy | 20230408 |
-| Nombre Alumno 7 | C007 |
+| Coronado de la vega, Alonso| 20221395 |
 | Nombre Alumno 8 | C008 |
 | Nombre Alumno 9 | C009 |
 | Nombre Alumno 10 | C010 |
