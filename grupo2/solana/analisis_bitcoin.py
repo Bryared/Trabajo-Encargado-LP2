@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 # hhh--- Nombre del archivo ---
-ID_ACTIVO = "bitcoin"
+ID_ACTIVO = "solana"
 NOMBRE_ARCHIVO_LIMPIO = f"datos_limpios_{ID_ACTIVO}.csv"
 NOMBRE_GRAFICO = f"grafico_precio_{ID_ACTIVO}.png"
 
