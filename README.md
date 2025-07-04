@@ -88,8 +88,8 @@ Este proyecto busca analizar ...
 | Vargas Maldonado, Andrew | 20240959 |
 | Villanueva Huamani Alexander | 20230419 |
 | Alva Aquino Nicole | 20221388 |
-| Nombre Alumno 5 | C005 |
-| Nombre Alumno 6 | C006 |
+| Ruiz Macedo Fernando Jose | 20211830 |
+| Ramos Correa, Freddy | 20230408 |
 | Nombre Alumno 7 | C007 |
 | Nombre Alumno 8 | C008 |
 | Nombre Alumno 9 | C009 |
