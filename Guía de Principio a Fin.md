@@ -1,87 +1,174 @@
-# Fase 1: Planificación y Configuración
+## 📊 Plan de Proyecto Detallado
 
--reunión
+### 🎯 Título del Proyecto
 
--elección del tema y fuentes
+**"Análisis Cuantitativo de Riesgo y Rendimiento en Mercados Modernos"**
 
--configuración del GitHub
+### 🔍 Activos a Analizar
 
+* Bitcoin (BTC)
+* Ethereum (ETH)
+* Dogecoin (DOGE)
+* Apple (AAPL)
+* Tesla (TSLA)
+* NVIDIA (NVDA)
 
+---
 
-# Fase 2: Desarrollo por Equipos
+## 🚀 Fase 1: Planificación y Configuración
 
-## 1. Extraccipon de Datos
+### ✅ Reunión de Lanzamiento
 
-a. Identificar la URL (endpoint)
+* Presentar el plan del proyecto.
+* Confirmar los 6 activos a analizar.
+* Asignar equipos de trabajo.
 
-b. Autenticación Key (headers)
+**Estructura Sugerida (10 integrantes):**
 
-c. Realizar la Solicitud (requests, GET)
+* **Equipo de Liderazgo (2):** Gestión, GitHub, integración final.
+* **Equipo Guía (4):** BTC y NVDA.
+* **Equipo Cripto (3):** ETH, SOL, DOGE.
+* **Equipo de Acciones (3):** AAPL, TSLA.
 
-d. Verificar y Procesar la respuesta (formato JSON)
+### ✅ Elección de Fuentes
 
-Queda: extraccion.py y datos_crudos.JSON
+* **Equipos Cripto:** API de CoinGecko.
+* **Equipo Acciones:** Librería yfinance o API Alpha Vantage.
+* Cada equipo revisa la documentación de su API.
 
+### ✅ Configuración de GitHub
 
+* Crear el repositorio.
+* Invitar a todos los miembros.
+* Proteger la rama principal (main).
+* Subir archivos base:
 
-## 2. Limpieza y Procesamiento
+  * `.gitignore`
+  * `README.md` con estructura inicial.
+  * `requirements.txt`.
 
-a. Cargar Datos (pandas, recibir el JSON)
+---
 
-b. Exploración Inicial (Entender el Dataframe con df.)
+## ⚙️ Fase 2: Desarrollo por Equipos
 
-c. Aplicar Limpieza
+Cada equipo ejecutará estas tareas en paralelo.
 
-     - Seleccionar Columnas
+### 1️⃣ Extracción de Datos
 
-     - Manejar Nulos
+**a. Identificar Endpoint:**
 
-     - Corregir Tipos de Datos
+* CoinGecko: `https://api.coingecko.com/api/v3/coins/{id}/market_chart`.
+* Alpha Vantage: `TIME_SERIES_DAILY_ADJUSTED`.
 
-     - Renombrar Columnas
+**b. Claves de Autenticación:**
 
--d. Guardar Datos Limpios (formato CSV)
+* CoinGecko: Sin clave básica.
+* Alpha Vantage: API Key gratuita.
 
-Queda: limpieza.py y datos_limpios.csv
+**c. Realizar Solicitud:**
 
+* Usar `requests` con parámetros (`vs_currency=usd`, `days=365`).
 
+**d. Procesar Respuesta:**
 
-## 3. Análisis y Visualización
+* Verificar `status_code`.
+* Guardar JSON crudo.
 
-a. Cargar datos limpios (nuevo Data Frame de pandas)
+**Resultado esperado:**
 
-b. Análisis Descriptivo (Calculas estadísticas básicas)
+* `extraccion_{activo}.py`
+* `datos_crudos_{activo}.json`
 
-c. Crear visualizaciones (matplotlib o seaborn)
+### 2️⃣ Limpieza y Procesamiento
 
-     - Gráfico Barras
+**a. Cargar Datos:**
 
-     - Gráfico Lineas
+* Leer JSON con `pandas`.
 
-     - Tablas
+**b. Explorar DataFrame:**
 
-d. Guardar los Gráficos (como imagen PNG para el Readme)
+* `.head()`, `.info()`.
 
-Queda: analisis_visual.py
+**c. Limpieza:**
 
--Documentación
+* Seleccionar columnas relevantes.
+* Manejar nulos.
+* Convertir timestamps con `pd.to_datetime()`.
+* Renombrar columnas a `Fecha` y `Precio_USD`.
 
+**d. Guardar CSV limpio:**
 
+* `datos_limpios_{activo}.csv`
 
-# Fase 3: Integración y Pruebas
+### 3️⃣ Análisis y Visualización
 
--Integración de Módulos (Unir scripts de extracción, limpieza, visualización)
+**a. Cargar CSV limpio.**
 
--Pruebas Funcionales (verificar)
+**b. Análisis Descriptivo:**
 
--Revisión y Depuración
+* `.describe()`.
 
+**c. Visualización preliminar:**
 
+* Gráfico de línea simple.
 
-# Fase 4: Finalización de entrega
+**d. Validación interna:**
 
--Finalizar documentación Readme
+* Revisar que los datos sean correctos.
 
--Preparación entregable
+**Documentación:**
 
--Todos Revisión Final
+* El Equipo de Liderazgo completa secciones generales del `README.md`.
+* Cada equipo redacta una breve descripción del activo.
+
+---
+
+## 🧩 Fase 3: Integración y Pruebas
+
+### ✅ Integración de Módulos
+
+* El Equipo de Liderazgo fusiona Pull Requests.
+* Crear `analisis_final.py`:
+
+  * Lee los 6 CSV.
+  * Calcula rendimiento normalizado, volatilidad y correlación.
+
+### ✅ Pruebas Funcionales
+
+* Equipo de pruebas temporal ejecuta `analisis_final.py`.
+* Verifica consistencia de resultados.
+
+### ✅ Revisión y Depuración
+
+* Reportar errores vía Issues en GitHub.
+* Corregir en conjunto.
+
+---
+
+## 📝 Fase 4: Finalización y Entrega
+
+### ✅ Documentación Final
+
+* Redactar conclusiones del análisis comparativo.
+* Incluir visualizaciones finales:
+
+  * Gráfico de rendimiento normalizado.
+  * Gráfico de volatilidad.
+  * Mapa de calor de correlación.
+
+### ✅ Preparación de Entregables
+
+* Capturas del historial de commits.
+* README.md completo.
+* Versiones finales de gráficos.
+
+### ✅ Revisión Final
+
+* Verificar alineación con la rúbrica.
+* Confirmar que todos los integrantes tengan contribución visible.
+
+---
+
+✅ **Escalabilidad:**
+
+* *(*) Se puede agregar más activos o más métricas avanzadas de riesgo si hay tiempo.\*
