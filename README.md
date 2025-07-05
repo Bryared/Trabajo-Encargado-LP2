@@ -82,15 +82,15 @@ Este proyecto busca analizar ...
 *Aquí se insertarán los gráficos y tablas finales.*
 
 # Integrantes
-| Integrante | Código |
-|---|---|
-| Vargas Maldonado, Bryan | 20230535 |
-| Vargas Maldonado, Andrew | 20240959 |
-| Villanueva Huamani Alexander | 20230419 |
-| Alva Aquino Nicole | 20221388 |
-| Ruiz Macedo Fernando Jose | 20211830 |
-| Ramos Correa, Freddy | 20230408 |
-| Coronado de la vega, Alonso| 20221395 |
+| Integrante | Código | Usuario |
+|---|---|---|
+| Vargas Maldonado, Bryan | 20230535 | Bryared |
+| Vargas Maldonado, Andrew | 20240959 | andrwxl |
+| Villanueva Huamani Alexander | 20230419 | ... |
+| Alva Aquino Nicole | 20221388 | ... |
+| Ruiz Macedo Fernando Jose | 20211830 | ... |
+| Ramos Correa, Freddy | 20230408 | ... |
+| Coronado de la vega, Alonso| 20221395 | ... |
 | Nombre Alumno 8 | C008 |
 | Nombre Alumno 9 | C009 |
 | Nombre Alumno 10 | C010 |
