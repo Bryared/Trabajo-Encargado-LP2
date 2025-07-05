@@ -100,7 +100,7 @@ def generar_grafico_comparativo_acciones(df_datos):
         hovermode='x unified'
     )
     
-    nombre_archivo_html = 'comparativa_rendimiento_acciones.html'
+    nombre_archivo_html = 'grupo1/GRAFICOS_HTML/comparativa_rendimiento_acciones.html'
     fig.write_html(nombre_archivo_html)
     
     print(f"Gráfico guardado como '{nombre_archivo_html}'. Abriendo en el navegador...")
