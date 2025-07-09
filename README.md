@@ -91,7 +91,7 @@ Este proyecto busca analizar ...
 | Ruiz Macedo Fernando Jose | 20211830 | ... |
 | Ramos Correa, Freddy | 20230408 | ... |
 | Coronado de la vega, Alonso| 20221395 | ron-62 |
-| Nombre Alumno 8 | C008 |
+| Lopez Acuña Victor Andreé | 20180206 | VictorLopez281199 |
 | Nombre Alumno 9 | C009 |
 | Nombre Alumno 10 | C010 |
 | Nombre Alumno 11 | C011 |
