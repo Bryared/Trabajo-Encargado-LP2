@@ -10,7 +10,7 @@ Original file is located at
 import requests
 import json
 
-# ========== EXTRACCIÓN DE DATOS PARA MICROSOFT ==========
+# ========== EXTRACCIÓN DE DATOS PARA APPLE ==========
 API_KEY = "IHEB6GAC16MZIU36"
 symbol = "AAPL"
 url = f"https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol={symbol}&apikey={API_KEY}"
@@ -20,7 +20,7 @@ response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
 
-    # Guardar archivo JSON directamente en carpeta MSFT
+    # Guardar archivo JSON directamente en carpeta APPLE
     with open("datos_crudos_AAPL.json", "w") as f:
         json.dump(data, f, indent=4)
 
