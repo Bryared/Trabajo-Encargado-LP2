@@ -78,6 +78,18 @@ Este proyecto busca analizar ...
 2.  Instalar las dependencias: `pip install -r requirements.txt`
 3.  Ejecutar el script principal: `python main.py`
 
+- [Gráficas Conjuntas](DOCUMENTACIÓN/BRYAN/conjuntas.md)
+- [Bryan-Bitcoin](DOCUMENTACIÓN/BRYAN/bryan.md)
+- [Andrew-SP500](DOCUMENTACIÓN/Andrew.md)
+- [Alexander-APPLE](DOCUMENTACIÓN/Alexander.md)
+- [Victor](DOCUMENTACIÓN/BRYAN/bryan.md)
+- [Nicole-TESLA](DOCUMENTACIÓN/Alexander.md)
+- [Ale](DOCUMENTACIÓN/BRYAN/Ale.md)
+- [Marcelo-Microsoft](DOCUMENTACIÓN/Marcelo.md)
+- [VictorLopez](DOCUMENTACIÓN/Victor2.md)
+- [Coronao-Theter](DOCUMENTACIÓN/Coronao.md)
+- [Fernando-Doguecoin](DOCUMENTACIÓN/Fernando.md)
+  
 ## 📊 Visualizaciones
 *Aquí se insertarán los gráficos y tablas finales.*
 
@@ -86,12 +98,12 @@ Este proyecto busca analizar ...
 |---|---|---|
 | Vargas Maldonado, Bryan | 20230535 | Bryared |
 | Vargas Maldonado, Andrew | 20240959 | andrwxl |
-| Villanueva Huamani Alexander | 20230419 | ... |
+| Villanueva Huamani Alexander | 20230419 | alexvilla123 |
 | Alva Aquino Nicole | 20221388 | ... |
 | Ruiz Macedo Fernando Jose | 20211830 | ... |
-| Ramos Correa, Freddy | 20230408 | ... |
+| Ramos Correa, Freddy | 20230408 | 20230408 |
 | Coronado de la vega, Alonso| 20221395 | ron-62 |
 | Lopez Acuña Victor Andreé | 20180206 | VictorLopez281199 |
-| Nombre Alumno 9 | C009 |
+| Arroyo Arruz, Alejandra  | 20211805 | Alejandra-1805 |
 | Nombre Alumno 10 | C010 |
 | Nombre Alumno 11 | C011 |
