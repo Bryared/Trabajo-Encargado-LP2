@@ -83,7 +83,7 @@ Este proyecto busca analizar ...
 - [Andrew-SP500](DOCUMENTACIÓN/Andrew.md)
 - [Alexander-APPLE](DOCUMENTACIÓN/Alexander.md)
 - [Victor](DOCUMENTACIÓN/BRYAN/bryan.md)
-- [Nicole-TESLA](TSLA1/Grafico_tesla-1.ipynb)
+- [Nicole-TESLA](DOCUMENTACIÓN/Alexander.md)
 - [Ale](DOCUMENTACIÓN/BRYAN/Ale.md)
 - [Marcelo-Microsoft](DOCUMENTACIÓN/Marcelo.md)
 - [VictorLopez](DOCUMENTACIÓN/Victor2.md)
