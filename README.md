@@ -78,6 +78,17 @@ Este proyecto busca analizar ...
 2.  Instalar las dependencias: `pip install -r requirements.txt`
 3.  Ejecutar el script principal: `python main.py`
 
+- [Bryan](DOCUMENTACIÓN/BRYAN/bryan.md)
+- [Andrew](DOCUMENTACIÓN/BRYAN/bryan.md)
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+  
 ## 📊 Visualizaciones
 *Aquí se insertarán los gráficos y tablas finales.*
 
