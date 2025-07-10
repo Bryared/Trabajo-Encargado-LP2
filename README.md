@@ -78,16 +78,17 @@ Este proyecto busca analizar ...
 2.  Instalar las dependencias: `pip install -r requirements.txt`
 3.  Ejecutar el script principal: `python main.py`
 
-- [Bryan](DOCUMENTACIÓN/BRYAN/bryan.md)
-- [Andrew](DOCUMENTACIÓN/Andrew.md)
-- [Alexander](DOCUMENTACIÓN/Alexander.md)
+- [Gráficas Conjuntas](DOCUMENTACIÓN/BRYAN/conjuntas.md)
+- [Bryan-Bitcoin](DOCUMENTACIÓN/BRYAN/bryan.md)
+- [Andrew-SP500](DOCUMENTACIÓN/Andrew.md)
+- [Alexander-APPLE](DOCUMENTACIÓN/Alexander.md)
 - [Victor](DOCUMENTACIÓN/BRYAN/bryan.md)
-- [Nicole](DOCUMENTACIÓN/Nicole.md)
+- [Nicole-TESLA](DOCUMENTACIÓN/Nicole.md)
 - [Ale](DOCUMENTACIÓN/BRYAN/Ale.md)
-- [Marcelo](DOCUMENTACIÓN/Marcelo.md)
+- [Marcelo-Microsoft](DOCUMENTACIÓN/Marcelo.md)
 - [VictorLopez](DOCUMENTACIÓN/Victor2.md)
-- [Coronao](DOCUMENTACIÓN/Coronao.md)
-- [Fernando](DOCUMENTACIÓN/Fernando.md)
+- [Coronao-Theter](DOCUMENTACIÓN/Coronao.md)
+- [Fernando-Doguecoin](DOCUMENTACIÓN/Fernando.md)
   
 ## 📊 Visualizaciones
 *Aquí se insertarán los gráficos y tablas finales.*
