@@ -98,7 +98,7 @@ Este proyecto busca analizar ...
 |---|---|---|
 | Vargas Maldonado, Bryan | 20230535 | Bryared |
 | Vargas Maldonado, Andrew | 20240959 | andrwxl |
-| Villanueva Huamani Alexander | 20230419 | ... |
+| Villanueva Huamani Alexander | 20230419 | alexvilla123 |
 | Alva Aquino Nicole | 20221388 | ... |
 | Ruiz Macedo Fernando Jose | 20211830 | ... |
 | Ramos Correa, Freddy | 20230408 | 20230408 |
