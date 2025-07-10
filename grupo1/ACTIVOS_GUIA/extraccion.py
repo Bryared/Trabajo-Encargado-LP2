@@ -26,7 +26,7 @@ API_KEY = "IHEB6GAC16MZIU36"
 
 # 2. Lista de símbolos (tickers) de acciones que queremos analizar.
 #    Ejemplos: 'AAPL' (Apple), 'MSFT' (Microsoft), 'SPY' (ETF del S&P 500).
-ACTIVOS_A_ANALIZAR = ['AAPL', 'MSFT', 'GOOGL', 'NVDA', 'SPY']
+ACTIVOS_A_ANALIZAR = ['AAPL', 'MSFT', 'GOOGL', 'NVDA', 'SPY', 'SILVER']
 
 # 3. Nombre de la carpeta donde se guardarán los archivos CSV de acciones.
 CARPETA_SALIDA_CSV = 'grupo1/ACTIVOS_GUIA/datos_acciones_csv'
