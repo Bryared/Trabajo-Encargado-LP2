@@ -92,6 +92,6 @@ Este proyecto busca analizar ...
 | Ramos Correa, Freddy | 20230408 | ... |
 | Coronado de la vega, Alonso| 20221395 | ron-62 |
 | Lopez Acuña Victor Andreé | 20180206 | VictorLopez281199 |
-| Nombre Alumno 9 | C009 |
+| Arroyo Arruz, Alejandra  | 20211805 | Alejandra-1805 |
 | Nombre Alumno 10 | C010 |
 | Nombre Alumno 11 | C011 |
