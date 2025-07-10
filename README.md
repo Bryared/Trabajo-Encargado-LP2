@@ -79,15 +79,15 @@ Este proyecto busca analizar ...
 3.  Ejecutar el script principal: `python main.py`
 
 - [Bryan](DOCUMENTACIÓN/BRYAN/bryan.md)
-- [Andrew](DOCUMENTACIÓN/BRYAN/bryan.md)
-- 3
-- 4
-- 5
-- 6
-- 7
-- 8
-- 9
-- 10
+- [Andrew](DOCUMENTACIÓN/Andrew.md)
+- [Alexander](DOCUMENTACIÓN/Alexander.md)
+- [Victor](DOCUMENTACIÓN/BRYAN/bryan.md)
+- [Nicole](DOCUMENTACIÓN/Nicole.md)
+- [Ale](DOCUMENTACIÓN/BRYAN/Ale.md)
+- [Marcelo](DOCUMENTACIÓN/Marcelo.md)
+- [VictorLopez](DOCUMENTACIÓN/Victor2.md)
+- [Coronao](DOCUMENTACIÓN/Coronao.md)
+- [Fernando](DOCUMENTACIÓN/Fernando.md)
   
 ## 📊 Visualizaciones
 *Aquí se insertarán los gráficos y tablas finales.*
