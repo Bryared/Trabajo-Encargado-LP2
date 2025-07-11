@@ -7,7 +7,6 @@ from typing import List, Dict
 # --- Configuración de la Página de Streamlit ---
 st.set_page_config(
     page_title="Visualizador de Activos Financieros",
-    page_icon="📊",
     layout="wide"
 )
 
@@ -118,7 +117,7 @@ def mostrar_graficos_individuales(datos: Dict[str, pd.DataFrame]):
     """
     Muestra un gráfico individual para cada activo, organizados en dos columnas.
     """
-    st.header("📊 Gráficos Individuales de Todos los Activos")
+    st.header("Gráficos Individuales de Todos los Activos")
     st.markdown("---")
 
     lista_activos = list(datos.items())
@@ -166,7 +165,7 @@ def main():
     """
     Función principal que ejecuta la aplicación Streamlit.
     """
-    st.title("📊 Visualizador de Activos Financieros")
+    st.title("Visualizador de Activos Financieros")
     st.markdown("Esta aplicación te permite cargar y visualizar datos de **acciones** y **criptomonedas**.")
 
     activos_disponibles = obtener_activos_disponibles(DATA_FOLDER)
@@ -191,7 +190,7 @@ def main():
     if not datos_filtrados:
         st.info("Por favor, selecciona al menos un activo en la barra lateral para ver el gráfico consolidado.")
     else:
-        st.header("📈 Gráfico Consolidado")
+        st.header("Gráfico Consolidado")
         figura_precios = crear_grafico_precios(datos_filtrados)
         st.plotly_chart(figura_precios, use_container_width=True)
 
@@ -199,7 +198,7 @@ def main():
     if todos_los_datos:
         mostrar_graficos_individuales(todos_los_datos)
 
-        st.header("📄 Datos en Bruto (Activos Seleccionados)")
+        st.header("Datos en Bruto (Activos Seleccionados)")
         for ticker, df in datos_filtrados.items():
             with st.expander(f"Mostrar datos de {ticker}"):
                 st.dataframe(df)
