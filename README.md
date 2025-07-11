@@ -86,7 +86,7 @@ Este proyecto busca analizar ...
 - [Nicole-TESLA](DOCUMENTACIÓN/Alexander.md)
 - [Ale](DOCUMENTACIÓN/BRYAN/Ale.md)
 - [Marcelo-Microsoft](DOCUMENTACIÓN/Marcelo.md)
-- [VictorLopez](DOCUMENTACIÓN/Victor2.md)
+- [VictorLopez- NVIDIA](DOCUMENTACIÓN/Victor2.md)
 - [Coronao-Theter](DOCUMENTACIÓN/Coronao.md)
 - [Fernando-Doguecoin](DOCUMENTACIÓN/Fernando.md)
   
