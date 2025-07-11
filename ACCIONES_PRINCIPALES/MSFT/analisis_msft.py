@@ -1,52 +1,56 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Leer el archivo con fechas y renombrar columna
+# Leer el archivo CSV con fechas y convertir la columna de fechas al formato datetime
 df = pd.read_csv("datos_limpios_MSFT.csv", parse_dates=["Unnamed: 0"])
+
+# Renombrar la columna de fecha
 df.rename(columns={"Unnamed: 0": "Fecha"}, inplace=True)
+
+# Usar la columna 'Fecha' como índice del DataFrame
 df.set_index("Fecha", inplace=True)
 
 # ----- Cálculo de métricas financieras -----
 
-# Rendimiento mensual en porcentaje
+# Calcular el rendimiento mensual (variación porcentual del precio ajustado)
 df['rendimiento'] = df['adjusted_close'].pct_change() * 100
 
-# Volatilidad móvil (desviación estándar de 3 meses)
+# Calcular la volatilidad como la desviación estándar móvil de 3 meses del rendimiento
 df['volatilidad'] = df['rendimiento'].rolling(window=3).std()
 
-# Filtrar solo meses con dividendos > 0
+# Filtrar solo los meses en los que se pagaron dividendos (mayores a 0)
 dividendos = df[df['dividend'] > 0]
 
 # ----- GRÁFICO 1: Precio Ajustado -----
-plt.figure(figsize=(10, 5))
-plt.plot(df.index, df['adjusted_close'], color='blue', marker='o', markersize=3, linewidth=1)
-plt.title("Precio Ajustado de Apple (AAPL)")
-plt.xlabel("Fecha")
-plt.ylabel("Precio (USD)")
-plt.grid(True, linestyle='--', alpha=0.5)
-plt.tight_layout()
-plt.savefig("grafico_precio_AAPL.png")
-plt.show()
+plt.figure(figsize=(10, 5))  # Crear una figura de 10x5 pulgadas
+plt.plot(df.index, df['adjusted_close'], color='blue', marker='o', markersize=3, linewidth=1)  # Línea del precio ajustado
+plt.title("Precio Ajustado de Apple (AAPL)")  # Título del gráfico
+plt.xlabel("Fecha")  # Etiqueta del eje X
+plt.ylabel("Precio (USD)")  # Etiqueta del eje Y
+plt.grid(True, linestyle='--', alpha=0.5)  # Agregar cuadrícula suave
+plt.tight_layout()  # Ajustar márgenes del gráfico
+plt.savefig("grafico_precio_AAPL.png")  # Guardar el gráfico como imagen
+plt.show()  # Mostrar el gráfico
 
 # ----- GRÁFICO 2: Rendimiento Mensual -----
-plt.figure(figsize=(10, 5))
-plt.bar(df.index, df['rendimiento'], color='green', width=20)
-plt.title("Rendimiento Mensual de AAPL (%)")
-plt.xlabel("Fecha")
-plt.ylabel("Rendimiento (%)")
-plt.axhline(0, color='black', linewidth=1)
-plt.grid(True, linestyle='--', alpha=0.5)
-plt.tight_layout()
-plt.savefig("grafico_rendimiento_AAPL.png")
-plt.show()
+plt.figure(figsize=(10, 5))  # Crear figura
+plt.bar(df.index, df['rendimiento'], color='green', width=20)  # Gráfico de barras del rendimiento mensual
+plt.title("Rendimiento Mensual de AAPL (%)")  # Título del gráfico
+plt.xlabel("Fecha")  # Etiqueta del eje X
+plt.ylabel("Rendimiento (%)")  # Etiqueta del eje Y
+plt.axhline(0, color='black', linewidth=1)  # Línea horizontal en 0
+plt.grid(True, linestyle='--', alpha=0.5)  # Cuadrícula
+plt.tight_layout()  # Ajuste de márgenes
+plt.savefig("grafico_rendimiento_AAPL.png")  # Guardar gráfico
+plt.show()  # Mostrar gráfico
 
 # ----- ✅ GRÁFICO 3: Dividendos (CORREGIDO) -----
-plt.figure(figsize=(10, 4))
-plt.bar(dividendos.index, dividendos['dividend'], color='darkorchid', width=20)
-plt.title("Dividendos Trimestrales de AAPL")
-plt.xlabel("Fecha")
-plt.ylabel("Dividendo por Acción (USD)")
-plt.grid(axis='y', linestyle='--', alpha=0.5)
-plt.tight_layout()
-plt.savefig("grafico_dividendos_AAPL.png")
-plt.show()
+plt.figure(figsize=(10, 4))  # Crear figura
+plt.bar(dividendos.index, dividendos['dividend'], color='darkorchid', width=20)  # Barras de dividendos
+plt.title("Dividendos Trimestrales de AAPL")  # Título
+plt.xlabel("Fecha")  # Etiqueta eje X
+plt.ylabel("Dividendo por Acción (USD)")  # Etiqueta eje Y
+plt.grid(axis='y', linestyle='--', alpha=0.5)  # Cuadrícula solo en eje Y
+plt.tight_layout()  # Ajustar márgenes
+plt.savefig("grafico_dividendos_AAPL.png")  # Guardar gráfico
+plt.show()  # Mostrar gráfico
