@@ -155,11 +155,11 @@ El núcleo del proyecto se basa en la aplicación de conceptos estadísticos par
 | Vargas Maldonado, Bryan | 20230535 | Bryared |
 | Vargas Maldonado, Andrew | 20240959 | andrwxl |
 | Villanueva Huamani Alexander | 20230419 | alexvilla123 |
-| Alva Aquino Nicole | 20221388 | ... |
+| Alva Aquino Nicole | 20221388 | nalva19 |
 | Ruiz Macedo Fernando Jose | 20211830 | FernandoRuiz345 |
 | Ramos Correa, Freddy | 20230408 | 20230408 |
 | Coronado de la vega, Alonso| 20221395 | ron-62 |
 | Lopez Acuña Victor Andreé | 20180206 | VictorLopez281199 |
 | Arroyo Arruz, Alejandra  | 20211805 | Alejandra-1805 |
-| Nombre Alumno 10 | C010 |
-| Nombre Alumno 11 | C011 |
+| Victor Ccosi | | smartlight5 |
+
