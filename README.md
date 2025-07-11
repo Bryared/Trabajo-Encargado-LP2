@@ -32,7 +32,7 @@ Para llevar a cabo nuestro análisis, hemos definido cuatro objetivos clave que 
 
 #### Visualización de Hallazgos 📈
 - Diseñar y generar visualizaciones de alto impacto que comuniquen nuestros hallazgos de manera clara y efectiva.
-- Crear un conjunto de gráficos (líneas, barras y un mapa de calor) que cuenten la historia completa del rendimiento, el riesgo y las interconexiones de los mercados analizados.
+- Crear un conjunto de gráficos (lineas, barras y tendencias) que cuenten la historia completa del rendimiento, el riesgo y las interconexiones de los mercados analizados.
 
 ## 🏗️ Metodología y Arquitectura del Proyecto
 Este proyecto fue concebido no como un simple script, sino como un sistema modular que sigue las mejores prácticas de la ingeniería de software y la ciencia de datos.
