@@ -7,35 +7,44 @@ Original file is located at
     https://colab.research.google.com/drive/1OkzKHwKNAOos6eNRKhC0PlxqpC0re3cJ
 """
 
-import pandas as pd
-import json
+import pandas as pd   # Importamos la librería pandas para trabajar con datos en forma de tabla.
+import json           # Importamos json para poder leer el archivo descargado desde la API.
 
 # ========== CARGAR DATOS CRUDOS ==========
-with open("datos_crudos_AAPL.json", "r") as f:
-    data = json.load(f)
 
-# Verifica que exista la clave esperada
+# Abrimos el archivo JSON que habíamos guardado previamente con los datos de Apple.
+with open("datos_crudos_AAPL.json", "r") as f:
+    data = json.load(f)  # Lo cargamos como un diccionario de Python.
+
+# Verificamos si el archivo contiene la parte clave llamada "Monthly Adjusted Time Series".
+# Si no está, se muestra un mensaje de error y se detiene el programa.
 if "Monthly Adjusted Time Series" not in data:
     print("❌ Estructura del JSON inválida o API sin datos.")
     exit()
 
 # ========== LIMPIEZA Y TRANSFORMACIÓN ==========
+
+# Extraemos únicamente los datos mensuales de precios, volumen y dividendos.
 raw_data = data['Monthly Adjusted Time Series']
 
-# Convertir a DataFrame
+# Convertimos esa información en un DataFrame de pandas (una tabla).
+# Cada fila representa un mes y cada columna un valor financiero.
 df = pd.DataFrame.from_dict(raw_data, orient='index')
 
-# Renombrar columnas
+# Renombramos las columnas para que sean más claras y fáciles de leer.
 df.columns = ['open', 'high', 'low', 'close', 'adjusted_close', 'volume', 'dividend']
 
-# Convertir tipos de datos a float
+# Convertimos todas las columnas a tipo numérico (float), ya que inicialmente son texto.
 df = df.astype(float)
 
-# Convertir índice a fechas y ordenar
+# Convertimos el índice del DataFrame (que son fechas en texto) a tipo fecha real.
 df.index = pd.to_datetime(df.index)
+
+# Ordenamos las filas del DataFrame desde la fecha más antigua a la más reciente.
 df = df.sort_index()
 
-# Guardar CSV limpio en la misma carpeta
+# Guardamos el resultado limpio en un archivo CSV llamado 'datos_limpios_AAPL.csv'
 df.to_csv("datos_limpios_AAPL.csv")
 
+# Mensaje para confirmar que se guardó correctamente el archivo limpio.
 print("✅ Archivo 'datos_limpios_AAPL.csv' guardado correctamente.")
