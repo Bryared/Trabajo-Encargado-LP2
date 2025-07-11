@@ -100,7 +100,7 @@ Este proyecto busca analizar ...
 | Vargas Maldonado, Andrew | 20240959 | andrwxl |
 | Villanueva Huamani Alexander | 20230419 | alexvilla123 |
 | Alva Aquino Nicole | 20221388 | ... |
-| Ruiz Macedo Fernando Jose | 20211830 | ... |
+| Ruiz Macedo Fernando Jose | 20211830 | FernandoRuiz345 |
 | Ramos Correa, Freddy | 20230408 | 20230408 |
 | Coronado de la vega, Alonso| 20221395 | ron-62 |
 | Lopez Acuña Victor Andreé | 20180206 | VictorLopez281199 |
