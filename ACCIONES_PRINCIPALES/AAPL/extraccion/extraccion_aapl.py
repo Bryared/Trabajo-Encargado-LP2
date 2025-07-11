@@ -7,23 +7,29 @@ Original file is located at
     https://colab.research.google.com/drive/1OkzKHwKNAOos6eNRKhC0PlxqpC0re3cJ
 """
 
-import requests
-import json
+import requests  # Esta librería nos permite hacer solicitudes a páginas web.
+import json      # Esta librería nos ayuda a trabajar con archivos en formato JSON.
 
 # ========== EXTRACCIÓN DE DATOS PARA APPLE ==========
-API_KEY = "IHEB6GAC16MZIU36"
-symbol = "AAPL"
+
+API_KEY = "IHEB6GAC16MZIU36"  # Esta es la clave de acceso para usar la API de Alpha Vantage.
+symbol = "AAPL"               # Este es el símbolo bursátil de Apple en la bolsa de valores.
+
+# Aquí construimos la URL que usaremos para pedir los datos de precios ajustados mensuales.
 url = f"https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol={symbol}&apikey={API_KEY}"
 
+# Enviamos la solicitud a la API usando requests.get
 response = requests.get(url)
 
+# Verificamos si la solicitud fue exitosa (código 200 significa éxito).
 if response.status_code == 200:
-    data = response.json()
+    data = response.json()  # Convertimos la respuesta en un diccionario de Python (formato JSON).
 
-    # Guardar archivo JSON directamente en carpeta APPLE
+    # Guardamos los datos en un archivo JSON llamado 'datos_crudos_AAPL.json'
     with open("datos_crudos_AAPL.json", "w") as f:
-        json.dump(data, f, indent=4)
+        json.dump(data, f, indent=4)  # Guardamos con sangrías para que se vea ordenado.
 
-    print("✅ Archivo 'datos_crudos_AAPL.json' guardado correctamente.")
+    print("✅ Archivo 'datos_crudos_AAPL.json' guardado correctamente.")  # Confirmación por consola.
 else:
+    # Si no se pudo obtener los datos, mostramos el código de error.
     print("❌ Error al obtener datos:", response.status_code)
