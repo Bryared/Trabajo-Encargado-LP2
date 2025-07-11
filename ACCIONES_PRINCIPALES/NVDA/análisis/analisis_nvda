@@ -1,1 +1,60 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Leer y preparar datos
+df = pd.read_csv("datos_limpios_NVDA.csv", parse_dates=["Unnamed: 0"])
+df.rename(columns={"Unnamed: 0": "Fecha"}, inplace=True)
+df.set_index("Fecha", inplace=True)
+df.rename(columns={
+    "adjusted_close": "Cierre Ajustado",
+    "dividend": "Dividendo"
+}, inplace=True)
+
+# Cálculo de métricas
+df['Rendimiento (%)'] = df['Cierre Ajustado'].pct_change() * 100
+df['Volatilidad'] = df['Rendimiento (%)'].rolling(window=3).std()
+dividendos = df[df['Dividendo'] > 0]
+
+# Mostrar estadísticas básicas
+print("📊 Resumen financiero de NVDA:")
+print(f"Promedio de precio ajustado: {df['Cierre Ajustado'].mean():.2f} USD")
+print(f"Rendimiento mensual promedio: {df['Rendimiento (%)'].mean():.2f} %")
+print(f"Máximo dividendo entregado: {df['Dividendo'].max():.2f} USD")
+
+# Gráfico 1: Precio Ajustado
+plt.figure(figsize=(10, 5))
+plt.plot(df.index, df['Cierre Ajustado'], color='steelblue', marker='o', linewidth=1.5)
+plt.title("Precio Ajustado de NVIDIA (NVDA)")
+plt.xlabel("Fecha")
+plt.ylabel("Precio (USD)")
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("grafico_precio_NVDA.png")
+plt.show()
+
+# Gráfico 2: Rendimiento mensual
+plt.figure(figsize=(10, 5))
+plt.bar(df.index, df['Rendimiento (%)'], color='forestgreen', width=20)
+plt.title("Rendimiento Mensual de NVDA (%)")
+plt.xlabel("Fecha")
+plt.ylabel("Rendimiento (%)")
+plt.axhline(0, color='black', linewidth=1)
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("grafico_rendimiento_NVDA.png")
+plt.show()
+
+# Gráfico 3: Dividendos
+plt.figure(figsize=(10, 4))
+plt.bar(dividendos.index, dividendos['Dividendo'], color='orchid', width=20)
+plt.title("Dividendos Trimestrales de NVDA")
+plt.xlabel("Fecha")
+plt.ylabel("Dividendo por Acción (USD)")
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("grafico_dividendos_NVDA.png")
+plt.show()
 
