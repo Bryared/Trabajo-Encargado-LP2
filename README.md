@@ -120,7 +120,7 @@ El núcleo del proyecto se basa en la aplicación de conceptos estadísticos par
 ### Fuentes de Datos:
 - **CoinGecko API:** Elegida por su robustez y generoso plan gratuito para obtener datos históricos de todas las criptomonedas.
 - **Alpha Vantage API / `yfinance`:** Seleccionadas para obtener datos históricos de las acciones de empresas y índices bursátiles, por su amplia cobertura y facilidad de uso.
-
+- **Finance Modeling Pep**
 ### Librerías Principales:
 - `requests`: Para la comunicación con las APIs.
 - `pandas`: Para la manipulación, limpieza y análisis de datos.
