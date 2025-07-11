@@ -12,7 +12,7 @@ En el dinámico panorama financiero del siglo XXI, la línea entre los mercados 
 
 Este proyecto nace de la intersección de estos dos mundos. Utilizando Python y herramientas de ciencia de datos, nos embarcamos en una misión para transformar el ruido del mercado en señales claras. No buscamos predecir el futuro, sino entender el pasado reciente de una manera cuantitativa y objetiva. A través del análisis de datos históricos, buscamos desentrañar las verdaderas personalidades de estos activos: su rendimiento, su riesgo inherente y las conexiones ocultas que los unen.
 
-Este no es solo un trabajo de programación; es la simulación del trabajo de un analista de datos moderno, aplicando un enfoque estadístico para arrojar luz sobre uno de los debates financieros más relevantes de nuestro tiempo, y consolidando los conocimientos adquiridos en los cursos de Lenguaje de Programación I y II.
+Este no es solo un trabajo de programación; es la simulación del trabajo de un Grupo de estudiantes con enfoque a analista de datos moderno, aplicando la estadística para arrojar luz sobre uno de los debates financieros más relevantes de nuestro tiempo, y consolidando los conocimientos adquiridos en los cursos de Lenguaje de Programación I y II.
 
 ## 🎯 Objetivos del Proyecto
 Para llevar a cabo nuestro análisis, hemos definido cuatro objetivos clave que estructuran nuestro flujo de trabajo de principio a fin:
